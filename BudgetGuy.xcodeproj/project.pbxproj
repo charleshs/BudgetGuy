@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		7C172FD928829EE5005B5F4C /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C172FD828829EE5005B5F4C /* RootViewControllerFactory.swift */; };
 		7C49B7F32882A3CF000DAD8E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C49B7F22882A3CF000DAD8E /* SnapKit */; };
+		7C4F82FF2882AF12008EAFDE /* Payout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F82FE2882AF12008EAFDE /* Payout.swift */; };
+		7C4F83022882B225008EAFDE /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83012882B225008EAFDE /* TransactionListViewController.swift */; };
+		7C4F830C2882B2F1008EAFDE /* BudgetGuyUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C4F830B2882B2F1008EAFDE /* BudgetGuyUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C4F830F2882B2F1008EAFDE /* BudgetGuyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4F83092882B2F1008EAFDE /* BudgetGuyUI.framework */; };
+		7C4F83102882B2F1008EAFDE /* BudgetGuyUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4F83092882B2F1008EAFDE /* BudgetGuyUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C4F83162882B322008EAFDE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83152882B322008EAFDE /* ListView.swift */; };
+		7C4F831A2882B35C008EAFDE /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83192882B35C008EAFDE /* ListCell.swift */; };
+		7C4F831C2882B43C008EAFDE /* BGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F831B2882B43C008EAFDE /* BGViewController.swift */; };
+		7C4F831E2882B50C008EAFDE /* SFSymbolImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F831D2882B50C008EAFDE /* SFSymbolImage.swift */; };
+		7C4F83202882BB5B008EAFDE /* TransactionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F831F2882BB5B008EAFDE /* TransactionListPresenter.swift */; };
+		7C4F83222882BBF4008EAFDE /* TransactionListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83212882BBF4008EAFDE /* TransactionListInteractor.swift */; };
+		7C4F83242882BC7B008EAFDE /* TransactionListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83232882BC7B008EAFDE /* TransactionListNavigator.swift */; };
+		7C4F83262882BCD6008EAFDE /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83252882BCD6008EAFDE /* TransactionListViewModel.swift */; };
+		7C4F83282882BE49008EAFDE /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83272882BE49008EAFDE /* ViewControllerFactory.swift */; };
+		7C4F832B2882C544008EAFDE /* PayoutListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F832A2882C544008EAFDE /* PayoutListCell.swift */; };
+		7C4F832D2882C7E9008EAFDE /* PayoutListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F832C2882C7E9008EAFDE /* PayoutListCellModel.swift */; };
+		7C4F83302882DBF1008EAFDE /* ModelPopulated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F832E2882C80B008EAFDE /* ModelPopulated.swift */; };
+		7C4F83322882DD11008EAFDE /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83312882DD11008EAFDE /* LayoutConstants.swift */; };
 		7CC2FB9C2882A5EA00A84C7B /* BGUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 7CC2FB9B2882A5EA00A84C7B /* BGUtils */; };
 		7CE1EFCC28829C3200CBD24D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1EFCB28829C3200CBD24D /* AppDelegate.swift */; };
 		7CE1EFCE28829C3200CBD24D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1EFCD28829C3200CBD24D /* SceneDelegate.swift */; };
@@ -16,8 +34,49 @@
 		7CE1EFD828829C3500CBD24D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE1EFD628829C3500CBD24D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7C4F830D2882B2F1008EAFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CE1EFC028829C3200CBD24D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C4F83082882B2F1008EAFDE;
+			remoteInfo = BudgetGuyUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C4F83142882B2F1008EAFDE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7C4F83102882B2F1008EAFDE /* BudgetGuyUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7C172FD828829EE5005B5F4C /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
+		7C4F82FE2882AF12008EAFDE /* Payout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payout.swift; sourceTree = "<group>"; };
+		7C4F83012882B225008EAFDE /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
+		7C4F83092882B2F1008EAFDE /* BudgetGuyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BudgetGuyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4F830B2882B2F1008EAFDE /* BudgetGuyUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudgetGuyUI.h; sourceTree = "<group>"; };
+		7C4F83152882B322008EAFDE /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		7C4F83192882B35C008EAFDE /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		7C4F831B2882B43C008EAFDE /* BGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGViewController.swift; sourceTree = "<group>"; };
+		7C4F831D2882B50C008EAFDE /* SFSymbolImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolImage.swift; sourceTree = "<group>"; };
+		7C4F831F2882BB5B008EAFDE /* TransactionListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListPresenter.swift; sourceTree = "<group>"; };
+		7C4F83212882BBF4008EAFDE /* TransactionListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListInteractor.swift; sourceTree = "<group>"; };
+		7C4F83232882BC7B008EAFDE /* TransactionListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListNavigator.swift; sourceTree = "<group>"; };
+		7C4F83252882BCD6008EAFDE /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		7C4F83272882BE49008EAFDE /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		7C4F832A2882C544008EAFDE /* PayoutListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoutListCell.swift; sourceTree = "<group>"; };
+		7C4F832C2882C7E9008EAFDE /* PayoutListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoutListCellModel.swift; sourceTree = "<group>"; };
+		7C4F832E2882C80B008EAFDE /* ModelPopulated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPopulated.swift; sourceTree = "<group>"; };
+		7C4F83312882DD11008EAFDE /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
 		7CC2FB992882A5D900A84C7B /* BGUtils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BGUtils; path = packages/BGUtils; sourceTree = "<group>"; };
 		7CE1EFC828829C3200CBD24D /* BudgetGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE1EFCB28829C3200CBD24D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,12 +87,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7C4F83062882B2F1008EAFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CE1EFC528829C3200CBD24D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C49B7F32882A3CF000DAD8E /* SnapKit in Frameworks */,
 				7CC2FB9C2882A5EA00A84C7B /* BGUtils in Frameworks */,
+				7C4F830F2882B2F1008EAFDE /* BudgetGuyUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +110,8 @@
 		7C49B7EC2882A147000DAD8E /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				7C4F83002882B1FD008EAFDE /* Transaction */,
+				7C4F82FD2882AED4008EAFDE /* Payout */,
 				7C49B7EF2882A1C9000DAD8E /* Root */,
 			);
 			path = Application;
@@ -70,9 +139,62 @@
 				7CE1EFCB28829C3200CBD24D /* AppDelegate.swift */,
 				7C172FD828829EE5005B5F4C /* RootViewControllerFactory.swift */,
 				7CE1EFCD28829C3200CBD24D /* SceneDelegate.swift */,
+				7C4F83272882BE49008EAFDE /* ViewControllerFactory.swift */,
 				7CE1EFD628829C3500CBD24D /* LaunchScreen.storyboard */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		7C4F82FD2882AED4008EAFDE /* Payout */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F82FE2882AF12008EAFDE /* Payout.swift */,
+			);
+			path = Payout;
+			sourceTree = "<group>";
+		};
+		7C4F83002882B1FD008EAFDE /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F83292882C535008EAFDE /* Cell */,
+				7C4F83212882BBF4008EAFDE /* TransactionListInteractor.swift */,
+				7C4F83232882BC7B008EAFDE /* TransactionListNavigator.swift */,
+				7C4F831F2882BB5B008EAFDE /* TransactionListPresenter.swift */,
+				7C4F83012882B225008EAFDE /* TransactionListViewController.swift */,
+				7C4F83252882BCD6008EAFDE /* TransactionListViewModel.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		7C4F830A2882B2F1008EAFDE /* BudgetGuyUI */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F830B2882B2F1008EAFDE /* BudgetGuyUI.h */,
+				7C4F831B2882B43C008EAFDE /* BGViewController.swift */,
+				7C4F83312882DD11008EAFDE /* LayoutConstants.swift */,
+				7C4F832E2882C80B008EAFDE /* ModelPopulated.swift */,
+				7C4F831D2882B50C008EAFDE /* SFSymbolImage.swift */,
+				7C4F83172882B33F008EAFDE /* ListView */,
+			);
+			path = BudgetGuyUI;
+			sourceTree = "<group>";
+		};
+		7C4F83172882B33F008EAFDE /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F83192882B35C008EAFDE /* ListCell.swift */,
+				7C4F83152882B322008EAFDE /* ListView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		7C4F83292882C535008EAFDE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F832A2882C544008EAFDE /* PayoutListCell.swift */,
+				7C4F832C2882C7E9008EAFDE /* PayoutListCellModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		7CC2FB982882A5D900A84C7B /* Packages */ = {
@@ -93,10 +215,11 @@
 		7CE1EFBF28829C3200CBD24D = {
 			isa = PBXGroup;
 			children = (
-				7CC2FB982882A5D900A84C7B /* Packages */,
 				7CE1EFCA28829C3200CBD24D /* BudgetGuy */,
-				7CE1EFC928829C3200CBD24D /* Products */,
+				7C4F830A2882B2F1008EAFDE /* BudgetGuyUI */,
 				7CC2FB9A2882A5EA00A84C7B /* Frameworks */,
+				7CC2FB982882A5D900A84C7B /* Packages */,
+				7CE1EFC928829C3200CBD24D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				7CE1EFC828829C3200CBD24D /* BudgetGuy.app */,
+				7C4F83092882B2F1008EAFDE /* BudgetGuyUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,7 +244,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7C4F83042882B2F1008EAFDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4F830C2882B2F1008EAFDE /* BudgetGuyUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		7C4F83082882B2F1008EAFDE /* BudgetGuyUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C4F83112882B2F1008EAFDE /* Build configuration list for PBXNativeTarget "BudgetGuyUI" */;
+			buildPhases = (
+				7C4F83042882B2F1008EAFDE /* Headers */,
+				7C4F83052882B2F1008EAFDE /* Sources */,
+				7C4F83062882B2F1008EAFDE /* Frameworks */,
+				7C4F83072882B2F1008EAFDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BudgetGuyUI;
+			productName = BudgetGuyUI;
+			productReference = 7C4F83092882B2F1008EAFDE /* BudgetGuyUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7CE1EFC728829C3200CBD24D /* BudgetGuy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CE1EFDC28829C3500CBD24D /* Build configuration list for PBXNativeTarget "BudgetGuy" */;
@@ -128,10 +281,12 @@
 				7CE1EFC428829C3200CBD24D /* Sources */,
 				7CE1EFC528829C3200CBD24D /* Frameworks */,
 				7CE1EFC628829C3200CBD24D /* Resources */,
+				7C4F83142882B2F1008EAFDE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7C4F830E2882B2F1008EAFDE /* PBXTargetDependency */,
 			);
 			name = BudgetGuy;
 			packageProductDependencies = (
@@ -152,6 +307,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					7C4F83082882B2F1008EAFDE = {
+						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
+					};
 					7CE1EFC728829C3200CBD24D = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -174,11 +333,19 @@
 			projectRoot = "";
 			targets = (
 				7CE1EFC728829C3200CBD24D /* BudgetGuy */,
+				7C4F83082882B2F1008EAFDE /* BudgetGuyUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7C4F83072882B2F1008EAFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CE1EFC628829C3200CBD24D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,17 +358,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7C4F83052882B2F1008EAFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4F831E2882B50C008EAFDE /* SFSymbolImage.swift in Sources */,
+				7C4F83302882DBF1008EAFDE /* ModelPopulated.swift in Sources */,
+				7C4F831C2882B43C008EAFDE /* BGViewController.swift in Sources */,
+				7C4F83322882DD11008EAFDE /* LayoutConstants.swift in Sources */,
+				7C4F83162882B322008EAFDE /* ListView.swift in Sources */,
+				7C4F831A2882B35C008EAFDE /* ListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CE1EFC428829C3200CBD24D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7CE1EFCC28829C3200CBD24D /* AppDelegate.swift in Sources */,
+				7C4F83282882BE49008EAFDE /* ViewControllerFactory.swift in Sources */,
+				7C4F83202882BB5B008EAFDE /* TransactionListPresenter.swift in Sources */,
+				7C4F83022882B225008EAFDE /* TransactionListViewController.swift in Sources */,
+				7C4F83222882BBF4008EAFDE /* TransactionListInteractor.swift in Sources */,
+				7C4F83262882BCD6008EAFDE /* TransactionListViewModel.swift in Sources */,
+				7C4F82FF2882AF12008EAFDE /* Payout.swift in Sources */,
+				7C4F832B2882C544008EAFDE /* PayoutListCell.swift in Sources */,
 				7CE1EFCE28829C3200CBD24D /* SceneDelegate.swift in Sources */,
+				7C4F83242882BC7B008EAFDE /* TransactionListNavigator.swift in Sources */,
 				7C172FD928829EE5005B5F4C /* RootViewControllerFactory.swift in Sources */,
+				7C4F832D2882C7E9008EAFDE /* PayoutListCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C4F830E2882B2F1008EAFDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C4F83082882B2F1008EAFDE /* BudgetGuyUI */;
+			targetProxy = 7C4F830D2882B2F1008EAFDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7CE1EFD628829C3500CBD24D /* LaunchScreen.storyboard */ = {
@@ -215,6 +412,75 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7C4F83122882B2F1008EAFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HW9KY3R5BK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charleshs.BudgetGuyUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C4F83132882B2F1008EAFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HW9KY3R5BK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charleshs.BudgetGuyUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7CE1EFDA28829C3500CBD24D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -332,6 +598,7 @@
 		7CE1EFDD28829C3500CBD24D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -359,6 +626,7 @@
 		7CE1EFDE28829C3500CBD24D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,6 +654,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7C4F83112882B2F1008EAFDE /* Build configuration list for PBXNativeTarget "BudgetGuyUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C4F83122882B2F1008EAFDE /* Debug */,
+				7C4F83132882B2F1008EAFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7CE1EFC328829C3200CBD24D /* Build configuration list for PBXProject "BudgetGuy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
