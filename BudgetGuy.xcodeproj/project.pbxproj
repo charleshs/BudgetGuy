@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7C172FD928829EE5005B5F4C /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C172FD828829EE5005B5F4C /* RootViewControllerFactory.swift */; };
 		7C49B7F32882A3CF000DAD8E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C49B7F22882A3CF000DAD8E /* SnapKit */; };
-		7C4F82FF2882AF12008EAFDE /* Payout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F82FE2882AF12008EAFDE /* Payout.swift */; };
 		7C4F83022882B225008EAFDE /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83012882B225008EAFDE /* TransactionListViewController.swift */; };
 		7C4F830C2882B2F1008EAFDE /* BudgetGuyUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C4F830B2882B2F1008EAFDE /* BudgetGuyUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C4F830F2882B2F1008EAFDE /* BudgetGuyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4F83092882B2F1008EAFDE /* BudgetGuyUI.framework */; };
@@ -30,6 +29,7 @@
 		7C4F8336288304ED008EAFDE /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F8335288304ED008EAFDE /* SectionHeaderView.swift */; };
 		7C4F833828830501008EAFDE /* DirectionalEdgeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F833728830501008EAFDE /* DirectionalEdgeConstraints.swift */; };
 		7C4F833E288305DA008EAFDE /* DateGroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F833D288305DA008EAFDE /* DateGroupHeaderView.swift */; };
+		7CA8FC1A288317E900C8AA23 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7CA8FC19288317E900C8AA23 /* Models */; };
 		7CC2FB9C2882A5EA00A84C7B /* BGUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 7CC2FB9B2882A5EA00A84C7B /* BGUtils */; };
 		7CE1EFCC28829C3200CBD24D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1EFCB28829C3200CBD24D /* AppDelegate.swift */; };
 		7CE1EFCE28829C3200CBD24D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1EFCD28829C3200CBD24D /* SceneDelegate.swift */; };
@@ -63,7 +63,6 @@
 
 /* Begin PBXFileReference section */
 		7C172FD828829EE5005B5F4C /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
-		7C4F82FE2882AF12008EAFDE /* Payout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payout.swift; sourceTree = "<group>"; };
 		7C4F83012882B225008EAFDE /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
 		7C4F83092882B2F1008EAFDE /* BudgetGuyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BudgetGuyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4F830B2882B2F1008EAFDE /* BudgetGuyUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BudgetGuyUI.h; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		7C4F8335288304ED008EAFDE /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		7C4F833728830501008EAFDE /* DirectionalEdgeConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionalEdgeConstraints.swift; sourceTree = "<group>"; };
 		7C4F833D288305DA008EAFDE /* DateGroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGroupHeaderView.swift; sourceTree = "<group>"; };
+		7C4F834628831711008EAFDE /* Models */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Models; path = packages/Models; sourceTree = "<group>"; };
 		7CC2FB992882A5D900A84C7B /* BGUtils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BGUtils; path = packages/BGUtils; sourceTree = "<group>"; };
 		7CE1EFC828829C3200CBD24D /* BudgetGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE1EFCB28829C3200CBD24D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +106,7 @@
 			files = (
 				7C49B7F32882A3CF000DAD8E /* SnapKit in Frameworks */,
 				7CC2FB9C2882A5EA00A84C7B /* BGUtils in Frameworks */,
+				7CA8FC1A288317E900C8AA23 /* Models in Frameworks */,
 				7C4F830F2882B2F1008EAFDE /* BudgetGuyUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,9 +117,8 @@
 		7C49B7EC2882A147000DAD8E /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				7C4F83002882B1FD008EAFDE /* Transaction */,
-				7C4F82FD2882AED4008EAFDE /* Payout */,
 				7C49B7EF2882A1C9000DAD8E /* Root */,
+				7C4F83002882B1FD008EAFDE /* Transaction */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -151,23 +151,15 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		7C4F82FD2882AED4008EAFDE /* Payout */ = {
-			isa = PBXGroup;
-			children = (
-				7C4F82FE2882AF12008EAFDE /* Payout.swift */,
-			);
-			path = Payout;
-			sourceTree = "<group>";
-		};
 		7C4F83002882B1FD008EAFDE /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
-				7C4F83292882C535008EAFDE /* Cell */,
 				7C4F83212882BBF4008EAFDE /* TransactionListInteractor.swift */,
 				7C4F83232882BC7B008EAFDE /* TransactionListNavigator.swift */,
 				7C4F831F2882BB5B008EAFDE /* TransactionListPresenter.swift */,
 				7C4F83012882B225008EAFDE /* TransactionListViewController.swift */,
 				7C4F83252882BCD6008EAFDE /* TransactionListViewModel.swift */,
+				7C4F83292882C535008EAFDE /* Cell */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -197,9 +189,9 @@
 		7C4F83292882C535008EAFDE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				7C4F833D288305DA008EAFDE /* DateGroupHeaderView.swift */,
 				7C4F832A2882C544008EAFDE /* PayoutListCell.swift */,
 				7C4F832C2882C7E9008EAFDE /* PayoutListCellModel.swift */,
-				7C4F833D288305DA008EAFDE /* DateGroupHeaderView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -216,8 +208,8 @@
 		7C4F833A28830538008EAFDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7C4F8335288304ED008EAFDE /* SectionHeaderView.swift */,
 				7C4F831B2882B43C008EAFDE /* BGViewController.swift */,
+				7C4F8335288304ED008EAFDE /* SectionHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				7CC2FB992882A5D900A84C7B /* BGUtils */,
+				7C4F834628831711008EAFDE /* Models */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -333,6 +326,7 @@
 			packageProductDependencies = (
 				7C49B7F22882A3CF000DAD8E /* SnapKit */,
 				7CC2FB9B2882A5EA00A84C7B /* BGUtils */,
+				7CA8FC19288317E900C8AA23 /* Models */,
 			);
 			productName = BudgetGuy;
 			productReference = 7CE1EFC828829C3200CBD24D /* BudgetGuy.app */;
@@ -424,7 +418,6 @@
 				7C4F83022882B225008EAFDE /* TransactionListViewController.swift in Sources */,
 				7C4F83222882BBF4008EAFDE /* TransactionListInteractor.swift in Sources */,
 				7C4F83262882BCD6008EAFDE /* TransactionListViewModel.swift in Sources */,
-				7C4F82FF2882AF12008EAFDE /* Payout.swift in Sources */,
 				7C4F832B2882C544008EAFDE /* PayoutListCell.swift in Sources */,
 				7CE1EFCE28829C3200CBD24D /* SceneDelegate.swift in Sources */,
 				7C4F83242882BC7B008EAFDE /* TransactionListNavigator.swift in Sources */,
@@ -743,6 +736,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7C49B7F12882A3CF000DAD8E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		7CA8FC19288317E900C8AA23 /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
 		};
 		7CC2FB9B2882A5EA00A84C7B /* BGUtils */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -7,6 +7,7 @@
 
 import BGUtils
 import Foundation
+import Models
 
 public final class TransactionListViewModel: TransactionListPresenter, TransactionListInteractor {
     private static let dateHeaderDateFormatter = BGDateFormatterFactory.dateOnly()

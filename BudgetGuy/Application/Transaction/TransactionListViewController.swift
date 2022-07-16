@@ -110,14 +110,15 @@ private extension TransactionListViewController {
     typealias DataSource = UICollectionViewDiffableDataSource<TransactionList.Section, TransactionList.Item>
 
     func makeDataSource() -> DataSource {
-        let payoutListCellRegistration = UICollectionView.CellRegistration<PayoutListCell, Payout> { cell, indexPath, payout in
-            cell.populate(with: PayoutListCellModel(payout: payout))
+        let payoutListCellRegistration = UICollectionView.CellRegistration<PayoutListCell, PayoutListCellModel> { cell, indexPath, cellModel in
+            cell.populate(with: cellModel)
         }
 
         let dataSource = DataSource(collectionView: listView) { collectionView, indexPath, itemIdentifier in
             switch itemIdentifier {
             case .payout(let payout):
-                return collectionView.dequeueConfiguredReusableCell(using: payoutListCellRegistration, for: indexPath, item: payout)
+                let cellModel = PayoutListCellModel(payout: payout)
+                return collectionView.dequeueConfiguredReusableCell(using: payoutListCellRegistration, for: indexPath, item: cellModel)
             }
         }
 
@@ -133,18 +134,5 @@ private extension TransactionListViewController {
         }
 
         return dataSource
-    }
-}
-
-// MARK: - Fileprivate Extensions
-private extension PayoutListCellModel {
-    static var dateFormatter = BGDateFormatterFactory.detailed()
-
-    convenience init(payout: Payout) {
-        self.init(
-            occurrenceDate: Self.dateFormatter.string(from: payout.occurrence),
-            description: payout.description,
-            amount: payout.amount.stringValue
-        )
     }
 }

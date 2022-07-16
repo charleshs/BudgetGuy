@@ -1,4 +1,5 @@
 import Foundation
+import Models
 
 public protocol TransactionListPresenterDelegate: AnyObject {
     func presenter(_ presenter: TransactionListPresenter, didUpdate sections: [TransactionList.Section])

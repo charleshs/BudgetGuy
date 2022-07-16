@@ -1,3 +1,6 @@
+import BGUtils
+import Models
+
 class PayoutListCellModel {
     let occurrenceDate: String
     let description: String
@@ -11,5 +14,17 @@ class PayoutListCellModel {
         self.occurrenceDate = occurrenceDate
         self.description = description
         self.amount = amount
+    }
+}
+
+extension PayoutListCellModel {
+    static var dateFormatter = BGDateFormatterFactory.detailed()
+
+    convenience init(payout: Payout) {
+        self.init(
+            occurrenceDate: Self.dateFormatter.string(from: payout.occurrence),
+            description: payout.description,
+            amount: payout.amount.stringValue
+        )
     }
 }
