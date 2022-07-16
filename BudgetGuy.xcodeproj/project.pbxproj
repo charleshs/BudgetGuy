@@ -27,6 +27,9 @@
 		7C4F832D2882C7E9008EAFDE /* PayoutListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F832C2882C7E9008EAFDE /* PayoutListCellModel.swift */; };
 		7C4F83302882DBF1008EAFDE /* ModelPopulated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F832E2882C80B008EAFDE /* ModelPopulated.swift */; };
 		7C4F83322882DD11008EAFDE /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F83312882DD11008EAFDE /* LayoutConstants.swift */; };
+		7C4F8336288304ED008EAFDE /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F8335288304ED008EAFDE /* SectionHeaderView.swift */; };
+		7C4F833828830501008EAFDE /* DirectionalEdgeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F833728830501008EAFDE /* DirectionalEdgeConstraints.swift */; };
+		7C4F833E288305DA008EAFDE /* DateGroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F833D288305DA008EAFDE /* DateGroupHeaderView.swift */; };
 		7CC2FB9C2882A5EA00A84C7B /* BGUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 7CC2FB9B2882A5EA00A84C7B /* BGUtils */; };
 		7CE1EFCC28829C3200CBD24D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1EFCB28829C3200CBD24D /* AppDelegate.swift */; };
 		7CE1EFCE28829C3200CBD24D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1EFCD28829C3200CBD24D /* SceneDelegate.swift */; };
@@ -77,6 +80,9 @@
 		7C4F832C2882C7E9008EAFDE /* PayoutListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoutListCellModel.swift; sourceTree = "<group>"; };
 		7C4F832E2882C80B008EAFDE /* ModelPopulated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPopulated.swift; sourceTree = "<group>"; };
 		7C4F83312882DD11008EAFDE /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
+		7C4F8335288304ED008EAFDE /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		7C4F833728830501008EAFDE /* DirectionalEdgeConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionalEdgeConstraints.swift; sourceTree = "<group>"; };
+		7C4F833D288305DA008EAFDE /* DateGroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGroupHeaderView.swift; sourceTree = "<group>"; };
 		7CC2FB992882A5D900A84C7B /* BGUtils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BGUtils; path = packages/BGUtils; sourceTree = "<group>"; };
 		7CE1EFC828829C3200CBD24D /* BudgetGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE1EFCB28829C3200CBD24D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,11 +176,11 @@
 			isa = PBXGroup;
 			children = (
 				7C4F830B2882B2F1008EAFDE /* BudgetGuyUI.h */,
-				7C4F831B2882B43C008EAFDE /* BGViewController.swift */,
-				7C4F83312882DD11008EAFDE /* LayoutConstants.swift */,
-				7C4F832E2882C80B008EAFDE /* ModelPopulated.swift */,
-				7C4F831D2882B50C008EAFDE /* SFSymbolImage.swift */,
+				7C4F833B28830550008EAFDE /* Assets */,
+				7C4F833928830519008EAFDE /* Layout */,
 				7C4F83172882B33F008EAFDE /* ListView */,
+				7C4F833C28830574008EAFDE /* Protocol */,
+				7C4F833A28830538008EAFDE /* Views */,
 			);
 			path = BudgetGuyUI;
 			sourceTree = "<group>";
@@ -193,8 +199,43 @@
 			children = (
 				7C4F832A2882C544008EAFDE /* PayoutListCell.swift */,
 				7C4F832C2882C7E9008EAFDE /* PayoutListCellModel.swift */,
+				7C4F833D288305DA008EAFDE /* DateGroupHeaderView.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		7C4F833928830519008EAFDE /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F833728830501008EAFDE /* DirectionalEdgeConstraints.swift */,
+				7C4F83312882DD11008EAFDE /* LayoutConstants.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		7C4F833A28830538008EAFDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F8335288304ED008EAFDE /* SectionHeaderView.swift */,
+				7C4F831B2882B43C008EAFDE /* BGViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C4F833B28830550008EAFDE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F831D2882B50C008EAFDE /* SFSymbolImage.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7C4F833C28830574008EAFDE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7C4F832E2882C80B008EAFDE /* ModelPopulated.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		7CC2FB982882A5D900A84C7B /* Packages */ = {
@@ -366,6 +407,8 @@
 				7C4F83302882DBF1008EAFDE /* ModelPopulated.swift in Sources */,
 				7C4F831C2882B43C008EAFDE /* BGViewController.swift in Sources */,
 				7C4F83322882DD11008EAFDE /* LayoutConstants.swift in Sources */,
+				7C4F833828830501008EAFDE /* DirectionalEdgeConstraints.swift in Sources */,
+				7C4F8336288304ED008EAFDE /* SectionHeaderView.swift in Sources */,
 				7C4F83162882B322008EAFDE /* ListView.swift in Sources */,
 				7C4F831A2882B35C008EAFDE /* ListCell.swift in Sources */,
 			);
@@ -385,6 +428,7 @@
 				7C4F832B2882C544008EAFDE /* PayoutListCell.swift in Sources */,
 				7CE1EFCE28829C3200CBD24D /* SceneDelegate.swift in Sources */,
 				7C4F83242882BC7B008EAFDE /* TransactionListNavigator.swift in Sources */,
+				7C4F833E288305DA008EAFDE /* DateGroupHeaderView.swift in Sources */,
 				7C172FD928829EE5005B5F4C /* RootViewControllerFactory.swift in Sources */,
 				7C4F832D2882C7E9008EAFDE /* PayoutListCellModel.swift in Sources */,
 			);

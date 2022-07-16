@@ -4,7 +4,8 @@ import SnapKit
 import UIKit
 
 class TransactionListViewController: BGViewController {
-    lazy var listView = ListView(appearance: .plain) { configuration in
+    lazy var listView = ListView(appearance: .grouped) { configuration in
+        configuration.headerMode = .supplementary
         configuration.showsSeparators = false
     }
 
@@ -109,22 +110,35 @@ private extension TransactionListViewController {
     typealias DataSource = UICollectionViewDiffableDataSource<TransactionList.Section, TransactionList.Item>
 
     func makeDataSource() -> DataSource {
-        let payoutListCellRegistration = UICollectionView.CellRegistration<PayoutListCell, Payout>.init { cell, indexPath, payout in
-            cell.populate(with: .init(payout: payout))
+        let payoutListCellRegistration = UICollectionView.CellRegistration<PayoutListCell, Payout> { cell, indexPath, payout in
+            cell.populate(with: PayoutListCellModel(payout: payout))
         }
 
-        return .init(collectionView: listView) { collectionView, indexPath, itemIdentifier in
+        let dataSource = DataSource(collectionView: listView) { collectionView, indexPath, itemIdentifier in
             switch itemIdentifier {
             case .payout(let payout):
                 return collectionView.dequeueConfiguredReusableCell(using: payoutListCellRegistration, for: indexPath, item: payout)
             }
         }
+
+        let sectionHeaderRegistration = UICollectionView.SupplementaryRegistration<DateGroupHeaderView>(
+            elementKind: UICollectionView.elementKindSectionHeader
+        ) { supplementaryView, elementKind, indexPath in
+            let section = dataSource.snapshot().sectionIdentifiers[indexPath.section]
+            supplementaryView.label.text = section.displayedText
+        }
+
+        dataSource.supplementaryViewProvider = { collectionView, elementKind, indexPath -> UICollectionReusableView? in
+            return collectionView.dequeueConfiguredReusableSupplementary(using: sectionHeaderRegistration, for: indexPath)
+        }
+
+        return dataSource
     }
 }
 
 // MARK: - Fileprivate Extensions
 private extension PayoutListCellModel {
-    static var dateFormatter = BGDateFormatterFactory.verbose()
+    static var dateFormatter = BGDateFormatterFactory.detailed()
 
     convenience init(payout: Payout) {
         self.init(

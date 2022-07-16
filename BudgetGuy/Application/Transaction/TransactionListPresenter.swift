@@ -12,7 +12,8 @@ public protocol TransactionListPresenter: AnyObject {
 
 public enum TransactionList {
     public struct Section: Hashable {
-        public var items: [Item]
+        public let displayedText: String
+        public let items: [Item]
     }
 
     public enum Item: Hashable {
